@@ -15,5 +15,51 @@ html, body {
   padding: 0;
   font-family: 'Outfit', sans-serif;
   background-color: var(--light-gray);
-  height: 100%;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#card {
+  background-color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 20px;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #card-bottom {
+    padding: 0 1rem;
+
+    h1 {
+      font-size: 1.3rem;
+      color: var(--dark-blue);
+      font-weight: var(--bold-weight);
+    }
+
+    p {
+      font-size: var(--paragraph-size);
+      color: var(--grayish-blue);
+      font-weight: var(--normal-weight);
+      padding-bottom: .5rem;
+    }
+  }
+}
+
+footer {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  text-align: center;
+  a {
+    color: var(--white);
+  }
 }
